@@ -1,5 +1,9 @@
 Revision history for Perl module Crypt::OpenPGP
 
+1.12.1-tiltdev  2016-03-25
+    - Remove dep on Alt-Crypto-RSA which causes long hangs with
+      4096bit keys. The old Crypto::RSA works just fine still.
+
 1.12  2015-08-16 CPAN Day release
     - Add NoVersion parameter to CO::Armour->armour (GH#26)
 
